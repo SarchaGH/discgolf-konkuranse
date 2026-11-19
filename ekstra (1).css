@@ -1,0 +1,25 @@
+.nedtelling{margin-top:20px;display:flex;align-items:baseline;gap:11px;color:#fff}.nedtelling span{font-size:12px;text-transform:uppercase;letter-spacing:1px;color:var(--lime);font-weight:700}.nedtelling strong{font:700 23px/1 "Barlow Condensed";letter-spacing:.5px}
+
+.mini-lenke{display:inline-flex;align-items:center;gap:6px;width:fit-content;margin:16px 0 0;color:var(--lime);font-size:13px;font-weight:700;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1.5px}.mini-lenke:hover{color:#fff}.mini-lenke span{font-size:15px;text-decoration:none}
+
+.spill-seksjon{padding:88px clamp(22px,7vw,112px);background:#e4ddcb;display:grid;grid-template-columns:.75fr 1.25fr;gap:65px;align-items:center}
+.spill-seksjon h2{font:700 clamp(46px,5.2vw,75px)/.86 "Barlow Condensed";margin:0;color:var(--mork);letter-spacing:.5px}
+.spill-seksjon h2 em{font-style:normal;color:var(--gronn)}
+.spill-seksjon>div>p:not(.overlinje){line-height:1.65;max-width:350px}
+.spill-start{border:0;background:var(--mork);color:white;padding:14px 20px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;cursor:pointer}
+.spill-start:disabled{opacity:.55;cursor:default}
+.spill-start:not(:disabled):hover{background:var(--gronn)}
+
+.spill-bane{max-width:760px;border:8px solid var(--mork);background:var(--mork);box-shadow:11px 11px 0 var(--lime)}
+.spill-info{display:flex;flex-wrap:wrap;gap:6px 16px;padding:11px 15px;background:rgba(255,253,248,.94);font-size:12px;font-weight:600;color:var(--blekk)}
+.spill-info strong{font-size:15px;color:var(--mork);font-weight:800;margin-left:3px}
+.spill-info .spill-vind{display:inline-flex;align-items:center;gap:5px;margin-left:auto}
+#spill-vind-pil{display:inline-block;font-style:normal;transition:transform .25s ease}
+#spill-vind-pil::before{content:"→"}
+
+#spill-lerret{display:block;width:100%;aspect-ratio:16/9;touch-action:none;cursor:grab}
+#spill-lerret:active{cursor:grabbing}
+
+.spill-bane #spill-status{margin:0;padding:10px 15px 13px;color:#f5f1e7;background:var(--mork);font-size:13px;font-weight:700;min-height:18px}
+
+@media(max-width:800px){.spill-seksjon{grid-template-columns:1fr;gap:35px}.spill-info{font-size:11px}.spill-info strong{font-size:14px}}
