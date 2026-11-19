@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Disc golf-konkurranse for Vg1-elever.">
+  <title>Disc golf-konkurranse | Vg1</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="bilder.css"><link rel="stylesheet" href="ekstra.css">
+</head>
+<body>
+  <header class="toppmeny">
+    <a class="logo" href="#hjem" aria-label="Til forsiden"><span>◉</span> DISC GOLF</a>
+    <nav aria-label="Hovedmeny"><a href="#spill">Spill</a><a href="#konkurranser">Konkurranser</a><a href="#hva-er">Hva er disc golf?</a><a class="meny-knapp" href="https://forms.cloud.microsoft/e/J0PFzuwPkn" target="_blank" rel="noopener">Meld deg på</a></nav>
+  </header>
+  <main>
+    <section class="helt" id="hjem">
+      <div class="helt-tekst">
+        <p class="overlinje">Vg1-elever · Store gressletta</p><h1>DISC GOLF<br><em>KONKURRANSE</em></h1>
+        <p class="intro">En aktiv midtetime i frisk luft. Velg utfordringen som passer deg, kast langt og ha det gøy!</p>
+        <div class="tid-kort"><span class="kalender-ikon" aria-hidden="true">◷</span><div><strong>Onsdag 16. september</strong><br>kl. 11.30–12.20</div></div>
+        <div class="nedtelling" aria-live="polite"><span>Starter om</span><strong id="nedtelling">Laster nedtelling …</strong></div>
+        <a class="hovedknapp" href="https://forms.cloud.microsoft/e/J0PFzuwPkn" target="_blank" rel="noopener">Meld deg på <span>↗</span></a>
+        <a class="mini-lenke" href="#spill">Test kastet ditt <span>↓</span></a>
+      </div>
+      <div class="helt-grafikk"><img src="bilder/disc-golf-spiller.png" alt="Spiller som kaster en frisbee mot en disc golf-kurv"><div class="bilde-skygge" aria-hidden="true"></div><div class="frisbee" aria-hidden="true"></div><p>KAST. FLY. TREFF.</p></div>
+    </section>
+    <section class="spill-seksjon" id="spill" aria-labelledby="spill-tittel">
+      <div>
+        <p class="overlinje">Før konkurransen</p>
+        <h2 id="spill-tittel">PRØV<br><em>MINIBANEN</em></h2>
+        <p>Dra disken bakover for å sikte, og slipp for å kaste. Kom deg forbi treet og ned i kurven — på færrest mulig kast.</p>
+        <button class="spill-start" id="spill-start" type="button">Start runde</button>
+      </div>
+      <div class="spill-bane" id="spill-bane">
+        <div class="spill-info">
+          <span>Hull <strong id="spill-hull">1</strong>/3</span>
+          <span>Par <strong id="spill-par">2</strong></span>
+          <span>Kast <strong id="spill-kast">0</strong></span>
+          <span class="spill-vind">Vind <strong id="spill-vind">stille</strong><i id="spill-vind-pil" aria-hidden="true"></i></span>
+        </div>
+        <canvas id="spill-lerret" tabindex="0" aria-label="Disc golf-bane. Dra i disken bakover og slipp for å kaste. Du kan også trykke mellomrom for å kaste rett fram."></canvas>
+        <p id="spill-status" aria-live="polite">Trykk «Start runde» for å begynne.</p>
+      </div>
+    </section>
+    <section class="infostrimmel" aria-label="Praktisk informasjon">
+      <div><span>⌖</span><p><strong>Møtested</strong>Store gressletta</p></div><div><span>◎</span><p><strong>For Vg1</strong>5–8 elever per runde</p></div><div><span>★</span><p><strong>Premie</strong>Til første plass!</p></div>
+    </section>
+    <section class="seksjon konkurranser" id="konkurranser">
+      <div class="seksjonsoverskrift"><p class="overlinje">Velg din utfordring</p><h2>TO MÅTER Å<br><em>KASTE PÅ</em></h2><p>Uansett om du er nybegynner eller har spilt mye: her er det en konkurranse for deg.</p></div>
+      <div class="kort-rutenett">
+        <article class="konkurranse-kort kurv-kort"><div class="kort-tall">01</div><div class="kort-illustrasjon kurv-illustrasjon" aria-hidden="true"><div class="mini-kurv"><i></i><b></b></div><div class="liten-disc"></div></div><p class="kort-merke">Nybegynner</p><h3>Kaste i kurv<br>konkurranse</h3><p>Prøv å treffe kurven fra <strong>98 meter</strong>. Perfekt for deg som ikke har spilt frisbeegolf så mye.</p><div class="avstand"><span>98</span> meter</div></article>
+        <article class="konkurranse-kort drive-kort"><div class="kort-tall">02</div><div class="kort-illustrasjon drive-illustrasjon" aria-hidden="true"><div class="kastende">●<i></i><b></b></div><div class="fly-disc"></div></div><p class="kort-merke">Erfaren</p><h3>Long drive<br>konkurranse</h3><p>Hvor langt kan du kaste? Vis hva du kan på en åpen bane på <strong>104 meter</strong>.</p><div class="avstand"><span>104</span> meter</div></article>
+      </div>
+    </section>
+    <section class="hva-er" id="hva-er">
+      <div class="hva-illustrasjon"><img src="bilder/disc-golf-disc-og-kurv.png" alt="Grønn frisbee og disc golf-kurv i skogen"><div class="bilde-skygge" aria-hidden="true"></div><div class="stor-disc" aria-hidden="true">DISC<br><small>GOLF</small></div></div>
+      <div class="hva-tekst"><p class="overlinje">Ny i sporten?</p><h2>HVA ER<br><em>DISC GOLF?</em></h2><p>Disc golf spilles som vanlig golf, men i stedet for ball og kølle bruker du en frisbee. Målet er å få disken i en metallkurv med så få kast som mulig.</p><p>Det er lett å komme i gang: ta et godt grep, sikt mot kurven og kast. Vi har disker klare – du trenger bare å møte opp!</p><div class="tre-steg"><span><b>1</b> Sikt</span><span><b>2</b> Kast</span><span><b>3</b> Treff</span></div></div>
+    </section>
+    <section class="premie"><div class="pokal" aria-hidden="true">♛</div><div><p class="overlinje">Det er noe å spille for</p><h2>VINN EN UNIK<br><em>3D-PRINTET POKAL</em></h2><p>Premie til første plass! Vinneren får en helt egen 3D-printet premie.</p></div></section>
+    <section class="pamelding" id="pamelding">
+      <div class="pamelding-innhold"><div><p class="overlinje">Klar for å kaste?</p><h2>MELD DEG<br><em>PÅ HER</em></h2><p>Fyll ut skjemaet, så er du med i konkurransen. Det tar bare et lite øyeblikk.</p></div>
+      <form id="pameldingsskjema"><p class="form-tekst">Påmeldingen skjer i Microsoft Forms. Trykk på knappen for å åpne skjemaet.</p><a class="form-lenke" href="https://forms.cloud.microsoft/e/J0PFzuwPkn" target="_blank" rel="noopener">Åpne påmeldingsskjema <span>↗</span></a><p class="skjema-status">Skjemaet åpnes i en ny fane.</p></form></div>
+    </section>
+  </main>
+  <footer><a class="logo" href="#hjem"><span>◉</span> DISC GOLF</a><p>Vg1-konkurranse · Store gressletta · Onsdag 16. september</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
